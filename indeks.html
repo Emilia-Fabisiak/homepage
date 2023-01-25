@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Krótka wizytówka</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/navigation.css" rel="stylesheet">
+        <link href="css/header.css" rel="stylesheet">
+        <link href="css/section.css" rel="stylesheet">
+        <link href="css/table.css" rel="stylesheet">
+        <link href="css/footer.css" rel="stylesheet">
+        <link href="css/tableContainer.css" rel="stylesheet">
+        <script defer src="js/script.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet">
+</head> 
+
+<body class="body">
+        <nav class="navigation">
+            <p class="navigation__paragraph">
+                <button class="navigation__button js-changeBackgroundButton">Ustaw <span class=" nextColorName js-nextColorName">szare</span> tło
+                    strony</button>
+            </p>
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#home">Home</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#wyksztalcenie">Wykształcenie</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#zycie-codzienne">Życie codzienne</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#zainteresowania">Zainteresowania</a>
+                </li>
+            </ul>
+        </nav>
+
+        <header id="home" class="header">
+            <h1>Emilia Fabisiak</h1>
+            <img class="header__image js-image" width="200" height="200" src="images/EmiliaFabisiak.jpg" alt="moje zdjęcie">
+            <p>
+                <button class="header__button js-button">Usuń zdjęcie</button>
+            </p>
+        </header>
+
+        <main>
+            <section id="wyksztalcenie" class="section">
+                <h2 class="section__subHeader">Wykszałcenie</h2>
+                <p class="section__paragraph">Z wykształcenia jestem magistrem ochrony środowiska, jednak w zawodzie pracowałam
+                    tylko kilka lat. Była to firma
+                    zajmująca się obrotem surowców wtórnych. <br> Obecnie pracuję w jednostce podległej Ministerswu
+                    Kultury i Dziedzictwa Narodowego. Fajna praca wśród artystów, ale pora na zmiany.</p>
+            </section>
+
+            <section id="zycie-codzienne" class="section">
+                <h2 class="section__subHeader">Życie codzienne</h2>
+                <p class="section__paragraph"> Jestem <strong>mamą trójki uroczych maluszków</strong> i obecnie przebywam na
+                    <em>urlopie</em> macierzyńskim. <br> W wolnych chwilach <span>(któych nie jest niestety za
+                        dużo)</span> staram się zgłębić <strong>tajniki programowania :)</strong>.
+                </p>
+            </section>
+
+            <section id="zainteresowania" class="section">
+                <h2 class="section__subHeader">Zainteresowania</h2>
+                <p class="section__paragraph">Uwielbiam muzykę, <b>taniec</b>, spacery oraz <strong>podróże</strong>. Do tego
+                    stopnia, że nawet ciąża nie przeszkadzała mi w pokonywaniu niezliczonej ilości schodów prowadzących
+                    na Szczeliniec Wielki :)</p>
+            </section>
+
+            <section id="tabela" class="section">
+                <div class="tableContainer">
+                    <table class="table">
+                        <caption class="table__caption">Moje ulubione filmy</caption>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="col">tytuł</th>
+                            <th class="table__cell table__cell--header" scope="col">obsada</th>
+                            <th class="table__cell table__cell--header" scope="col">reżyser</th>
+                            <th class="table__cell table__cell--header" scope="col">rok produkcji</th>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row" rowspan="2">Titanic</th>
+                            <td class="table__cell">Leonardo DiCaprio</td>
+                            <td class="table__cell" rowspan="2">James Cameron</td>
+                            <td class="table__cell" rowspan="2">1997</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">Kate Winslet</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Na noże</th>
+                            <td class="table__cell">Daniel Craig</td>
+                            <td class="table__cell">Rian Johnson</td>
+                            <td class="table__cell">2019</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row" rowspan="2">Skazani na Shawshank</th>
+                            <td class="table__cell">Tim Robbins</td>
+                            <td class="table__cell" rowspan="2">Frank Darabont</td>
+                            <td class="table__cell" rowspan="2">1994</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">Morgan Freeman</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row" rowspan="2">Nietykalni</th>
+                            <td class="table__cell">Francois Cluzet</td>
+                            <td class="table__cell">Olivier Nakache</td>
+                            <td class="table__cell" rowspan="2">2011</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">Omar Sy</td>
+                            <td class="table__cell">Eric Toledaro</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row" rowspan="2">Zielona Mila</th>
+                            <td class="table__cell">Tom Hanks</td>
+                            <td class="table__cell" rowspan="2">Frank Darabont</td>
+                            <td class="table__cell" rowspan="2">1999</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">Michael Clarke Duncan</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2023 Emilia Fabisiak. Wszelkie prawa zastrzeżone.</p>
+        </footer>
+</body>
+
+</html>

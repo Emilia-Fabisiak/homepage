@@ -1,0 +1,14 @@
+ .section {
+    padding: 10px 0;
+  }
+  
+  .section__subHeader {
+    color: #494bc5;
+    font-weight: normal;
+  }
+  
+  .section__paragraph {
+    line-height: 1.5;
+  }
+
+ 
