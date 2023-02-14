@@ -4,13 +4,12 @@
     padding: 10px 0;
  }
 
- .header__image {
+ .headerImage {
     border-radius: 25%;
     margin-bottom: 10px;
     box-shadow: 5px 5px 10px #333;
  }
  
-
- .header__button {
+ .headerButton {
     font-family: "Open Sans", sans-serif;
  }
