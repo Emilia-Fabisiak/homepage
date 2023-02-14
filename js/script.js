@@ -1,4 +1,8 @@
-console.log("Cześć!");
+const welcome = () => {
+    console.log("Cześć! Witam wszystkich początkujących deweloperów.");
+}
+
+welcome();
 
 let header__button = document.querySelector(".js-button");
 let header__image = document.querySelector(".js-image");
