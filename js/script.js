@@ -13,18 +13,19 @@
         nextColorName.innerText = body.classList.contains("body--grey") ? "białe" : "szare";
     };
     
+    const init = () => {
+        const changeBackgroundButton = document.querySelector(".js-changeBackgroundButton");
+        changeBackgroundButton.addEventListener("click", taggleBackground);
+    }
     
-    
+    init ();
+
     let headerButton = document.querySelector(".js-button");
     let headerImage = document.querySelector(".js-image");
-    let changeBackgroundButton = document.querySelector(".js-changeBackgroundButton");
-
     
     headerButton.addEventListener("click", () => {
         headerImage.remove();
         headerButton.remove();
     });
-    
-    changeBackgroundButton.addEventListener("click", taggleBackground);
-    
+        
 }
