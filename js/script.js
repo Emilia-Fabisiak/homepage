@@ -12,20 +12,23 @@
         body.classList.toggle("body--grey");
         nextColorName.innerText = body.classList.contains("body--grey") ? "białe" : "szare";
     };
-    
+
+    const removeHeaderButtonAndImage = () => {
+        const headerButton = document.querySelector(".js-button");
+        const headerImage = document.querySelector(".js-image");
+
+        headerImage.remove();
+        headerButton.remove();
+    }    
+
     const init = () => {
         const changeBackgroundButton = document.querySelector(".js-changeBackgroundButton");
         changeBackgroundButton.addEventListener("click", taggleBackground);
+
+        const headerButton = document.querySelector(".js-button");
+        headerButton.addEventListener("click", removeHeaderButtonAndImage);
     }
     
     init ();
-
-    let headerButton = document.querySelector(".js-button");
-    let headerImage = document.querySelector(".js-image");
-    
-    headerButton.addEventListener("click", () => {
-        headerImage.remove();
-        headerButton.remove();
-    });
-        
+   
 }
