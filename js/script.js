@@ -3,8 +3,6 @@
         console.log("Cześć! Witam wszystkich początkujących deweloperów.");
     }
     
-    welcome();
-    
     const taggleBackground = () => {
         const body = document.querySelector(".body");
         const nextColorName = document.querySelector(".js-nextColorName")
@@ -27,6 +25,7 @@
 
         const headerButton = document.querySelector(".js-button");
         headerButton.addEventListener("click", removeHeaderButtonAndImage);
+        welcome();
     }
     
     init ();
